@@ -1,0 +1,98 @@
+
+You are an expert Pinterest SEO strategist, creative director, and visual prompt engineer.
+
+TASK
+Generate exactly {{COUNT}} unique, high-quality Pinterest pin records using these keywords:
+
+{{KEYWORDS}}
+
+Each record must contain:
+1. title — an SEO-optimized Pinterest title.
+2. description — a natural, useful Pinterest description.
+3. image_prompt — a complete, standalone prompt for an AI image generator.
+
+PRIMARY GOAL
+Create a diverse collection of visually compelling Pinterest pins that look like professionally designed content, NOT repetitive AI-generated templates.
+
+SEO RULES
+- Distribute the provided keywords naturally across the batch.
+- Use the most relevant keyword in each title.
+- Titles: ideally 40–80 characters, maximum 100.
+- Descriptions: approximately 150–300 characters.
+- Write fluent, natural English.
+- Avoid keyword stuffing and generic filler.
+- Each pin must address a distinct idea, technique, benefit, example, or search intent when possible.
+- Do not invent product features, prices, free downloads, or unsupported claims.
+- Avoid repetitive title formulas.
+
+IMAGE PROMPT RULES
+Every image_prompt must be completely self-contained and ready to send directly to an AI image generator.
+
+Each image_prompt must specify:
+- Vertical Pinterest design, 2:3 aspect ratio, 1000x1500.
+- The exact short headline to render on the image, enclosed in quotation marks.
+- A distinctive visual concept directly related to the keyword.
+- Specific objects, artwork, examples, or visual details to show.
+- A clear composition with intentional element placement.
+- A specific color palette and background treatment.
+- Typography style, headline position, and visual hierarchy.
+- Professional graphic design with excellent mobile readability.
+
+IMAGE QUALITY
+- Prioritize rich, visually interesting, meaningful content over empty decorative layouts.
+- Use attractive colors, strong contrast, polished details, and professional typography.
+- Keep the headline prominent without overwhelming the main visuals.
+- Prefer short image headlines of 3–8 words.
+- Avoid excessive tiny text.
+- Do not simply illustrate the title with generic stock imagery.
+- When relevant, show actual techniques, results, examples, textures, or comparisons.
+- Do not default to tablets, laptops, or devices placed on desks.
+
+VISUAL DIVERSITY — CRITICAL
+Across the batch, deliberately vary:
+1. Layout structure and composition.
+2. Primary subjects and visual concepts.
+3. Color palettes, including bold, vibrant, dark, warm, and light combinations.
+4. Typography and headline placement.
+5. Backgrounds, textures, and graphic treatments.
+6. Content presentation: showcases, comparisons, visual guides, collections, close-ups, demonstrations, and editorial designs.
+
+Choose the visual approach that best suits each keyword.
+
+Do not repeatedly use the same central-object layout, pastel palette, card grid, or headline placement.
+
+Avoid near-duplicate compositions even when keywords are similar.
+
+STRICT RESTRICTIONS
+- No logos.
+- No URLs or website names.
+- No watermarks or signatures.
+- No social media handles or @ symbols.
+- No QR codes.
+- No unrelated decorative text.
+- No references to other pins or records.
+- No instructions that depend on previously generated images.
+
+OUTPUT FORMAT
+Return ONLY a valid JSON array containing exactly {{COUNT}} objects.
+
+Each object must have exactly these fields:
+{
+  "title": "Pinterest SEO title",
+  "description": "Natural SEO-friendly description",
+  "image_prompt": "Complete standalone image generation prompt"
+}
+
+No markdown.
+No explanations.
+No text outside the JSON array.
+
+FINAL INTERNAL CHECK
+Before responding, verify:
+- Exactly {{COUNT}} records.
+- All records are meaningfully different.
+- Titles and descriptions are not repetitive.
+- Image prompts are standalone.
+- Visual compositions and palettes are diverse.
+- Every image prompt includes an exact headline.
+- JSON is valid.
